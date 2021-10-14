@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="AddVendor" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="954.4,5050.4" sap2010:WorkflowViewState.IdRef="AddVendor_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="AddVendor" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,5281.6" sap2010:WorkflowViewState.IdRef="AddVendor_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="30">
       <x:String>System.Activities</x:String>
@@ -65,7 +65,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AddVendor" sap:VirtualizedContainerService.HintSize="676.8,4945.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AddVendor" sap:VirtualizedContainerService.HintSize="678.4,5176.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="newVendor" />
       <Variable x:TypeArguments="x:Boolean" Name="repeat" />
@@ -77,7 +77,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="allows user to input the new vendors name" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="635.2,272.8" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter vendor name" Title="Create New Vendor">
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="allows user to input the new vendors name" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="636.8,272.8" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter vendor name" Title="Create New Vendor">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[newVendor]</OutArgument>
       </ui:InputDialog.Result>
@@ -87,32 +87,32 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InputDialog>
-    <ui:BuildDataTable sap2010:Annotation.AnnotationText="builds a data table for the new vendors name" DataTable="[addNewVendor]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="635.2,91.2" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Vendor&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+    <ui:BuildDataTable sap2010:Annotation.AnnotationText="builds a data table for the new vendors name" DataTable="[addNewVendor]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="636.8,91.2" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Vendor&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BuildDataTable>
-    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{newVendor}]" DataTable="[addNewVendor]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="635.2,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-    <ui:AppendRange sap2010:Annotation.AnnotationText="adds the new vendors name to the vedor list in the &quot;P0-vendors.xls&quot; spreadsheet" DataTable="[addNewVendor]" DisplayName="Append Range" sap:VirtualizedContainerService.HintSize="635.2,160" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="Vendor List" WorkbookPath="P0-Vendors.xls">
+    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{newVendor}]" DataTable="[addNewVendor]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="636.8,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+    <ui:AppendRange sap2010:Annotation.AnnotationText="adds the new vendors name to the vedor list in the &quot;P0-vendors.xls&quot; spreadsheet" DataTable="[addNewVendor]" DisplayName="Append Range" sap:VirtualizedContainerService.HintSize="636.8,160" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="Vendor List" WorkbookPath="P0-Vendors.xls">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:AppendRange>
-    <ui:BuildDataTable DataTable="[createHeaders]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="635.2,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Inventory&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Quantity&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Discount&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Inventory&quot;,&quot;Quantity&quot;,&quot;Price&quot;,&quot;Discount&quot;}]" DataTable="[createHeaders]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="635.2,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
-    <ui:WriteRange AddHeaders="False" DataTable="[createHeaders]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="635.2,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="[newVendor]" StartingCell="A1" WorkbookPath="P0-Vendors.xls" />
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="notifies the user that the new vendor has been added" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="635.2,91.2" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;New vendor &quot; + newVendor + &quot; has been added&quot;]">
+    <ui:BuildDataTable DataTable="[createHeaders]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="636.8,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Inventory&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Quantity&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Discount&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Inventory&quot;,&quot;Quantity&quot;,&quot;Price&quot;,&quot;Discount&quot;}]" DataTable="[createHeaders]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="636.8,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+    <ui:WriteRange AddHeaders="False" DataTable="[createHeaders]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="636.8,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="[newVendor]" StartingCell="A1" WorkbookPath="P0-Vendors.xls" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="notifies the user that the new vendor has been added" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="636.8,91.2" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;New vendor &quot; + newVendor + &quot; has been added&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MessageBox>
-    <Assign sap2010:Annotation.AnnotationText="assigns the boolean variable &quot;repeat&quot; to &quot;True&quot; to setup for the following loop" sap:VirtualizedContainerService.HintSize="635.2,104" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap2010:Annotation.AnnotationText="assigns the boolean variable &quot;repeat&quot; to &quot;True&quot; to setup for the following loop" sap:VirtualizedContainerService.HintSize="636.8,104" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Boolean">[repeat]</OutArgument>
       </Assign.To>
@@ -125,9 +125,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="635.2,3552.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+    <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="636.8,3784" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
       <ui:InterruptibleDoWhile.Body>
-        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="600,3385.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="601.6,3616.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="yesOrNo" />
           </Sequence.Variables>
@@ -136,7 +136,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:InputDialog Options="{x:Null}" sap2010:Annotation.AnnotationText="allows the user to add to the new vendors inventory or exit" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="558.4,339.2" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="What would you like to do?" OptionsString="Add to Inventory;Go Back to Menu;Quit" Title="Add to Inventory">
+          <ui:InputDialog Options="{x:Null}" sap2010:Annotation.AnnotationText="allows the user to add to the new vendors inventory or exit" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="560,339.2" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="What would you like to do?" OptionsString="Add to Inventory;Go Back to Menu;Quit" Title="Add to Inventory">
             <ui:InputDialog.Result>
               <OutArgument x:TypeArguments="x:String">[yesOrNo]</OutArgument>
             </ui:InputDialog.Result>
@@ -146,15 +146,15 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:InputDialog>
-          <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[yesOrNo]" sap:VirtualizedContainerService.HintSize="558.4,2913.6" sap2010:WorkflowViewState.IdRef="Switch`1_2">
-            <Sequence x:Key="Add to Inventory" sap:VirtualizedContainerService.HintSize="518.4,2680" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[yesOrNo]" sap:VirtualizedContainerService.HintSize="560,3144.8" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+            <Sequence x:Key="Add to Inventory" sap:VirtualizedContainerService.HintSize="520,2911.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="AddInventory" sap:VirtualizedContainerService.HintSize="476.8,2587.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence DisplayName="AddInventory" sap:VirtualizedContainerService.HintSize="478.4,2818.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="addItem" />
                   <Variable x:TypeArguments="x:Int32" Name="itemQty" />
@@ -169,7 +169,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="input the item to be inventoried" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="435.2,272.8" sap2010:WorkflowViewState.IdRef="InputDialog_6" IsPassword="False" Label="Enter your item for inventory" Title="Create Inventory">
+                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="input the item to be inventoried" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="436.8,272.8" sap2010:WorkflowViewState.IdRef="InputDialog_6" IsPassword="False" Label="Enter your item for inventory" Title="Create Inventory">
                   <ui:InputDialog.Result>
                     <OutArgument x:TypeArguments="x:String">[addItem]</OutArgument>
                   </ui:InputDialog.Result>
@@ -179,17 +179,49 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:InputDialog>
-                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="input the number of items to be added" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="435.2,272.8" sap2010:WorkflowViewState.IdRef="InputDialog_7" IsPassword="False" Label="How many are available?" Title="Quantity">
-                  <ui:InputDialog.Result>
-                    <OutArgument x:TypeArguments="x:Int32">[itemQty]</OutArgument>
-                  </ui:InputDialog.Result>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </ui:InputDialog>
-                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="input the price of the added item" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="435.2,272.8" sap2010:WorkflowViewState.IdRef="InputDialog_8" IsPassword="False" Label="[&quot;How much is &quot; + addItem]" Title="Price">
+                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,504" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                  <TryCatch.Try>
+                    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="input the number of items to be added" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="333.6,272.8" sap2010:WorkflowViewState.IdRef="InputDialog_7" IsPassword="False" Label="How many are available?" Title="Quantity">
+                      <ui:InputDialog.Result>
+                        <OutArgument x:TypeArguments="x:Int32">[itemQty]</OutArgument>
+                      </ui:InputDialog.Result>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:InputDialog>
+                  </TryCatch.Try>
+                  <TryCatch.Catches>
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ActivityAction x:TypeArguments="s:Exception">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                        </ActivityAction.Argument>
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Whoopsies! I don't think you meant to enter THAT! Try again.&quot;]" />
+                      </ActivityAction>
+                    </Catch>
+                  </TryCatch.Catches>
+                  <TryCatch.Finally>
+                    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="input the item to be inventoried" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="333.6,272.8" sap2010:WorkflowViewState.IdRef="InputDialog_10" IsPassword="False" Label="Enter your item for inventory" Title="Create Inventory">
+                      <ui:InputDialog.Result>
+                        <OutArgument x:TypeArguments="x:String">[addItem]</OutArgument>
+                      </ui:InputDialog.Result>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:InputDialog>
+                  </TryCatch.Finally>
+                </TryCatch>
+                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="input the price of the added item" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="436.8,272.8" sap2010:WorkflowViewState.IdRef="InputDialog_8" IsPassword="False" Label="[&quot;How much is &quot; + addItem]" Title="Price">
                   <ui:InputDialog.Result>
                     <OutArgument x:TypeArguments="x:Double">[itemPrice]</OutArgument>
                   </ui:InputDialog.Result>
@@ -199,12 +231,12 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:InputDialog>
-                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="435.2,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_9" IsPassword="False" Label="How much is any discount?" Title="Discounts">
+                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="436.8,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_9" IsPassword="False" Label="How much is any discount?" Title="Discounts">
                   <ui:InputDialog.Result>
                     <OutArgument x:TypeArguments="x:Double">[discount]</OutArgument>
                   </ui:InputDialog.Result>
                 </ui:InputDialog>
-                <ui:BuildDataTable sap2010:Annotation.AnnotationText="builds a data table for the inventory" DataTable="[newInventory]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="435.2,91.2" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Inventory&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Quantity&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Discount&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+                <ui:BuildDataTable sap2010:Annotation.AnnotationText="builds a data table for the inventory" DataTable="[newInventory]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="435.2,91.2" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Inventory&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Quantity&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Discount&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>

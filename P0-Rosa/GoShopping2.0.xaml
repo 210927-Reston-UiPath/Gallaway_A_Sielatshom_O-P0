@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestShoppingFeature" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1306.4,5313.6" sap2010:WorkflowViewState.IdRef="TestShoppingFeature_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestShoppingFeature" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1410.4,4844" sap2010:WorkflowViewState.IdRef="TestShoppingFeature_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="29">
       <x:String>System.Activities</x:String>
@@ -63,13 +63,13 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestShoppingFeature" sap:VirtualizedContainerService.HintSize="1316.8,5208.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TestShoppingFeature" sap:VirtualizedContainerService.HintSize="1316.8,4739.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="GoShopping" sap:VirtualizedContainerService.HintSize="1275.2,5116" sap2010:WorkflowViewState.IdRef="Sequence_10">
+    <Sequence DisplayName="GoShopping" sap:VirtualizedContainerService.HintSize="1275.2,4492.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="dtClient" />
         <Variable x:TypeArguments="scg:IEnumerable(sd:DataRow)" Name="list" />
@@ -82,20 +82,20 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Client Sequence" sap:VirtualizedContainerService.HintSize="1233.6,5023.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <Sequence DisplayName="Client Sequence" sap:VirtualizedContainerService.HintSize="1233.6,4400" sap2010:WorkflowViewState.IdRef="Sequence_5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtClientList]" DisplayName="Read Range Client" sap:VirtualizedContainerService.HintSize="1192,88" sap2010:WorkflowViewState.IdRef="ReadRange_3" SheetName="Client List" WorkbookPath="P0-Clients.xls" />
-        <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dtClientList]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="1192,4802.4" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+        <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dtClientList]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="1192,4179.2" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
           <ui:ForEachRow.Body>
             <ActivityAction x:TypeArguments="sd:DataRow">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="sd:DataRow" Name="clientRow" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1142.4,4653.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1142.4,4030.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="clientSheet" />
                 </Sequence.Variables>
@@ -113,26 +113,26 @@
                   </Assign.Value>
                 </Assign>
                 <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtClient]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="1100.8,88" sap2010:WorkflowViewState.IdRef="ReadRange_4" SheetName="[clientSheet]" WorkbookPath="P0-Clients.xls" />
-                <Sequence DisplayName="Vendor Sequence" sap:VirtualizedContainerService.HintSize="1100.8,4332.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Vendor Sequence" sap:VirtualizedContainerService.HintSize="1100.8,3709.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtVendorList]" DisplayName="Read Range Vendor" sap:VirtualizedContainerService.HintSize="1059.2,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Vendor List" WorkbookPath="P0-Vendors.xls" />
-                  <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dtVendorList]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="1059.2,4112" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                  <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dtVendorList]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="1059.2,3488.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                     <ui:ForEachRow.Body>
                       <ActivityAction x:TypeArguments="sd:DataRow">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="sd:DataRow" Name="vendorRow" />
                         </ActivityAction.Argument>
-                        <Sequence sap:VirtualizedContainerService.HintSize="1009.6,3963.2" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                        <Sequence sap:VirtualizedContainerService.HintSize="1009.6,3340" sap2010:WorkflowViewState.IdRef="Sequence_17">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="968,3870.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="968,3247.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="vendorSheet" />
                             </Sequence.Variables>
@@ -150,19 +150,19 @@
                               </Assign.Value>
                             </Assign>
                             <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtVendor]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="926.4,88" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="[vendorSheet]" WorkbookPath="P0-Vendors.xls" />
-                            <ui:ForEachRow CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Looks at each client row" DataTable="[dtClient]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="926.4,3549.6" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                            <ui:ForEachRow CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Looks at each client row" DataTable="[dtClient]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="926.4,2926.4" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
                               <ui:ForEachRow.Body>
                                 <ActivityAction x:TypeArguments="sd:DataRow">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="client" />
                                   </ActivityAction.Argument>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="876.8,3369.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                  <Sequence sap:VirtualizedContainerService.HintSize="876.8,2746.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="835.2,3276.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <Sequence sap:VirtualizedContainerService.HintSize="835.2,2653.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                       <Sequence.Variables>
                                         <Variable x:TypeArguments="x:Boolean" Name="boolMatch" />
                                         <Variable x:TypeArguments="x:Boolean" Name="ifCondition" />
@@ -218,13 +218,13 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </Assign>
-                                      <ui:ForEachRow CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Looks at each vendor row" DataTable="[dtVendor]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="793.6,2822.4" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                                      <ui:ForEachRow CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Looks at each vendor row" DataTable="[dtVendor]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="793.6,2199.2" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
                                         <ui:ForEachRow.Body>
                                           <ActivityAction x:TypeArguments="sd:DataRow">
                                             <ActivityAction.Argument>
                                               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="vendor" />
                                             </ActivityAction.Argument>
-                                            <Sequence sap:VirtualizedContainerService.HintSize="744,2642.4" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                            <Sequence sap:VirtualizedContainerService.HintSize="744,2019.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                               <Sequence.Variables>
                                                 <Variable x:TypeArguments="x:String" Name="vendorItem" />
                                                 <Variable x:TypeArguments="x:Boolean" Name="ifCondition2" />
@@ -332,9 +332,9 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </Assign>
-                                                        <ui:BuildDataTable DataTable="[dtExpense]" DisplayName="Build Data Table - for expense report dtExpense" sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Client_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Client_x0020_Order&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Quantity&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Cost&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+                                                        <ui:BuildDataTable DataTable="[dtExpense]" DisplayName="Build Data Table - for expense report dtExpense" sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Client_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Client_x0020_Order&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Quantity&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Cost&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
                                                         <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{clientName, clientItem, clientQty, clientCost}]" DataTable="[dtExpense]" DisplayName="Add Data Row - dtExpense" sap:VirtualizedContainerService.HintSize="433.6,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-                                                        <ui:BuildDataTable DataTable="[dtClientTotal]" DisplayName="Build Data Table - for client expense - dtClientTotal" sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Order&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Quantity&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Cost&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+                                                        <ui:BuildDataTable DataTable="[dtClientTotal]" DisplayName="Build Data Table - for client expense - dtClientTotal" sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Order&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Quantity&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Cost&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
                                                         <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{clientItem, clientQty, clientCost}]" DataTable="[dtClientTotal]" DisplayName="Add Data Row - dtClientTotal" sap:VirtualizedContainerService.HintSize="433.6,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
                                                         <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="433.6,418.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="ExpenseReport.xls">
                                                           <ui:ExcelApplicationScope.Body>
@@ -359,40 +359,6 @@
                                                   </Sequence>
                                                 </If.Then>
                                               </If>
-                                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="702.4,583.2" sap2010:WorkflowViewState.IdRef="CommentOut_10">
-                                                <ui:CommentOut.Body>
-                                                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="524.8,504.8" sap2010:WorkflowViewState.IdRef="Sequence_27">
-                                                    <sap:WorkflowViewStateService.ViewState>
-                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                      </scg:Dictionary>
-                                                    </sap:WorkflowViewStateService.ViewState>
-                                                    <If sap2010:Annotation.AnnotationText="Executes if a match is not found" Condition="[(client.Item(0).ToString &lt;&gt; vendor.Item(0).ToString)]" sap:VirtualizedContainerService.HintSize="483.2,412" sap2010:WorkflowViewState.IdRef="If_4">
-                                                      <sap:WorkflowViewStateService.ViewState>
-                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                                        </scg:Dictionary>
-                                                      </sap:WorkflowViewStateService.ViewState>
-                                                      <If.Then>
-                                                        <Sequence sap:VirtualizedContainerService.HintSize="271.2,231.2" sap2010:WorkflowViewState.IdRef="Sequence_16">
-                                                          <sap:WorkflowViewStateService.ViewState>
-                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                            </scg:Dictionary>
-                                                          </sap:WorkflowViewStateService.ViewState>
-                                                          <WriteLine sap2010:Annotation.AnnotationText="Writes to Output console if a match is not found.&#xA;&#xA;Used for testing purposes" DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.6,138.4" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[&quot;No match found for, &quot; + clientSheet + &quot;'s &quot; + client.Item(0).ToString + &quot; at &quot; + vendorSheet]">
-                                                            <sap:WorkflowViewStateService.ViewState>
-                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                                              </scg:Dictionary>
-                                                            </sap:WorkflowViewStateService.ViewState>
-                                                          </WriteLine>
-                                                        </Sequence>
-                                                      </If.Then>
-                                                    </If>
-                                                  </Sequence>
-                                                </ui:CommentOut.Body>
-                                              </ui:CommentOut>
                                             </Sequence>
                                           </ActivityAction>
                                         </ui:ForEachRow.Body>
@@ -424,5 +390,10 @@
         </ui:ForEachRow>
       </Sequence>
     </Sequence>
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="1275.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="MainMenu.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
   </Sequence>
 </Activity>
